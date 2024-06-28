@@ -50,6 +50,93 @@ html {
     background-color: coral;
     border-right: 3px solid #ffffff;
   }
-  #menu li.hidden-link {
-    opacity: 0;
+ 
+
+  #title{
+    margin-top: 65px;
+  }
+  #title h1 {
+    font-size: 52px;
+    text-align:left;
+  }
+  h1, h2, #menu, button, footer span {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h2 { 
+    font-size:27px;
+  }
+  #menu {
+    position: fixed;
+    top:12px; 
+    left:0px;
+  }
+  #menu ul{
+    display:flex;
+    margin:0;
+    padding-inline-start:0px;
+  }
+  #menu li {
+    list-style: none;
+    text-indent: 0;
+    opacity: 1;
+    transition: opacity 1.5s;
+  }
+  #menu li a {
+    text-decoration: none;
+    padding:10px;
+    color: #333333;
+    font-weight: bold;
+    background-color: coral;
+    border-right: 3px solid #ffffff;
+  }
+
+  #contact-form input{
+    height:20px;
+  }
+  #contact-form input,#contact-form button,#contact-form textarea{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #333333;
+    border-radius: 4px;
+  }
+  button#send-btn {
+    padding: 10px 40px;
+    margin-left: 168px;;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    background-color:coral;
+    border: 0px none transparent;
+    border-radius:15px;
+  }
+  button#send-btn:hover, #go-to-top:hover,#menu li a:hover{
+    background-color: coral;
+  }
+  #menu li.active a{
+    background-color: coral;
+  }
+  hr{
+    height: 4px;
+    background-color: coral;
+    border: 0 none;
+  }
+  footer p{
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width:750px){
+    #container{
+      width: 750px;
+    }
+    #menu{
+      margin: 0 59%;
+    }
+  
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{
+      scroll-behavior: auto;
+    }
   }
